@@ -44,7 +44,7 @@
   !if (%strpos($stride_code, "E")>=0)
     !$stride_string = $stride_string + "<color:#purple><back:#plum> E </back></color>"
   !endif
-  !return "<font:Consolas><b>" + $stride_string + "</b></font> "
+  !return "<font:Consolas><b>" + $stride_string + "</b></font> \n"
 !endfunction
 
 skinparam card {
