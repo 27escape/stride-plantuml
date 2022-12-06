@@ -3,7 +3,7 @@
 !endfunction
 
 !function $AggregatedRisk($risk)
-  !return "<font:Consolas><b><back:#darkorchid><color:#white> " + $risk + " </color></back></b></font>\n"
+  !return "<font:Consolas><b><back:#darkorchid><color:#white> " + $risk + " </color></back></b></font>"
 !endfunction
 
 !function $AggregatedRisks($risks)
@@ -21,7 +21,7 @@
     !endif
     !$index = $index + 1
   !endwhile
-  !return $risk_string + $AggregatedRisk($current_risk) + " "
+  !return $risk_string + $AggregatedRisk($current_risk) + " \n"
 !endfunction
 
 !function $Stride($stride_code)
