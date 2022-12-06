@@ -1,5 +1,5 @@
 !function $TrustValueRatio($ratio)
-  !return "<font:Consolas><b><back:white><color:black> " + $ratio + " </color></back></b></font> \n"
+  !return "<font:Consolas><size:20><b><back:white><color:black> " + $ratio + " </color></back></b></size></font>\n"
 !endfunction
 
 !function $AggregatedRisk($risk)
@@ -21,7 +21,7 @@
     !endif
     !$index = $index + 1
   !endwhile
-  !return $risk_string + $AggregatedRisk($current_risk) + " \n"
+  !return "\n" + $risk_string + $AggregatedRisk($current_risk) + "\n"
 !endfunction
 
 !function $Stride($stride_code)
@@ -44,7 +44,7 @@
   !if (%strpos($stride_code, "E")>=0)
     !$stride_string = $stride_string + "<color:#purple><back:#plum> E </back></color>"
   !endif
-  !return "<font:Consolas><b>" + $stride_string + "</b></font> \n"
+  !return "<font:Consolas><b>" + $stride_string + "</b></font> "
 !endfunction
 
 skinparam card {
