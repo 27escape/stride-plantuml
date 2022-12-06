@@ -1,5 +1,5 @@
 !function $TrustValueRatio($ratio)
-  !return "<font:Consolas><size:20><b><back:white><color:black> " + $ratio + " </color></back></b></size></font>\n"
+  !return "<font:Consolas><size:18><b><back:white><color:black> " + $ratio + " </color></back></b></size></font>  "
 !endfunction
 
 !function $AggregatedRisk($risk)
